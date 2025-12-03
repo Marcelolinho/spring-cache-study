@@ -50,6 +50,10 @@ public class ProductSKUEntity extends BaseEntity{
     @NotNull
     private Boolean available;
 
+    @ManyToOne
+    @JoinColumn(name = "id_product", nullable = false)
+    private ProductEntity product;
+
     @OneToMany(mappedBy = "productSku", cascade = CascadeType.ALL)
     private List<ProductSKUImagesEntity> productSkuImages;
 }

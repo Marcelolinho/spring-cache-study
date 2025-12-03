@@ -39,5 +39,8 @@ public class ProductEntity extends BaseEntity{
     private Boolean available;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    private List<ProductSKUEntity> productSKUs;
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
     private List<ProductImagesEntity> productImages;
 }
