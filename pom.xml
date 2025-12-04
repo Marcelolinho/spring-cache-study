@@ -46,6 +46,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webmvc</artifactId>
 		</dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        <!--    Muito importante ser o STARTER-DATA-REDIS para que o RedisConnectionFactory ja venha configurado    -->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
